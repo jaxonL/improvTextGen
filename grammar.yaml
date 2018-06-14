@@ -1,0 +1,71 @@
+root:
+  groups:
+    -
+      tags: []
+      phrases:
+        - "The [:prefix] [:name] is a [:class] commissioned in [#1888-1910]"
+
+prefix:
+  groups:
+    -
+      tags:
+        - ['type', 'military']
+      phrases:
+        - "HMS"
+    -
+      tags:
+        - ['type', 'civilian']
+      phrases:
+        - "SS"
+
+name:
+  groups:
+    -
+      tags:
+        - ['type', 'military']
+      phrases:
+        - "Belfast"
+        - "Invincible"
+        - "Unstoppable"
+        - "Indefatigable"
+        - "Inevitable"
+        - "Inerrant"
+    -
+      tags:
+        - ['type', 'civilian']
+      phrases:
+        - "Andromeda"
+        - "Ignatious"
+        - "Sapheus"
+        - "Coccus"
+
+class:
+  groups:
+    -
+      tags:
+        - ['type', 'military']
+      phrases:
+        - "cutter"
+        - "torpedo boat"
+        - "light cruiser"
+        - "heavy cruiser"
+        - "battleship"
+    -
+      tags:
+        - ['type', 'civilian']
+      phrases:
+        - "steamship"
+        - "cargo ship"
+        - "[:adjective] yacht"
+        - "ferry"
+
+adjective:
+  groups:
+    -
+      tags:
+        - ['type', 'civilian']
+      phrases:
+        - "party"
+        - "personal"
+        - "private"
+        - "business"
